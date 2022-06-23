@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>endlessUniverse</title>
+    <script src="https://kit.fontawesome.com/4de2f2267d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="header">
+    <img src="assets/endless.png" class="headBanner">
+    <img src="assets/mond-vor-schwarzem-hintergrund-c-6201688-jpg--66934-.jpg" class="moonPic">
+    <img src="assets/Raumsonde-1.jpg" class="spacePic">
+</header>
+
+<nav>
+    <ul class="navigationBar">
+
+        <li><a onclick="testAlert()">Home</a></li>
+        <li><a onclick="scrollToPlanets()">Exoplaneten</a></li>
+        <li><a onclick="scrollToNebula()">Kosmischer Nebel</a></li>
+        <li><a onclick="scrollToTechno(); showMore();">Technik</a></li>
+    </ul>
+
+    <input class="searchBar">
+    <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+</nav>
+
+
+<div class="container">
+    <h2>Planetarischer Ring-Nebel</h2>
+    <button onclick="showSource()" class="sourceNebel"> <i class="fa-solid fa-book-atlas"></i></button>
+    <img src="assets/grafik-14-1024x1024.png" class="articlePic">
+    <p>Der Ring-Nebel ist mit Ausnahme der Saturnringe vermutlich die berühmteste himmlische Ringstruktur. Die einfache, schöne Erscheinung dieses Planetarischen Nebels liegt am Blickwinkel. Von der Erde blicken wir direkt in eine tonnenförmig gebaute Gaswolke hinein, die von dem sterbenden, in der Mitte gelegenen Stern abgestoßen wurde.</p>
+</div>
+
+<div class="headSlides">
+    <h3>Zufällige Bilder</h3>
+</div>
+
+
+<div class="simpleSlides">
+    <img class="slides animate-left" src="assets/slider1.jpg">
+    <img class="slides animate-left" src="assets/slider2.jpg">
+    <img class="slides animate-left" src="assets/slider3.jpg">
+    <img class="slides animate-left" src="assets/slider4.jpg">
+
+</div>
+<script src="script.js"></script>
+
+<img id="exoPlanets" class="bannerPic" src="assets/banner.jpg">
+<div class="planetsPart">
+<h4>Exoplaneten</h4>
+    <button onclick="showSource()" class="sourcePlanets"><i class="fa-solid fa-book-atlas"></i></button>
+</div>
+<div class="containerPlanets">
+    <div class="planetOne">
+        <h5>PSR B1620-26 b</h5>
+        <img class="planetPicOne" src="assets/PSR B1620-26 b.jpg">
+        <p class="planetInfo">Mit 13 Milliarden Jahren der Älteste Planet der gefunden wurde.</p>
+    </div>
+    <div class="planetOne">
+        <h5> V830 Tauri b</h5>
+        <img class="planetPicOne" src="assets/V830 Tauri b3.jpg" alt="tauri">
+        <p class="planetInfo">Der aktuell jüngste bekannte Planet mit 2 Millionen Jahren. </p>
+    </div>
+    <div class="planetOne">
+        <h5>KELT-9 b</h5>
+        <img class="planetPicOne" src="assets/images.jpg">
+        <p class="planetInfo">Bis zu 4327 Grad Celsius beträgt die Temperatur tagsüber auf dem heißesten Planeten.</p>
+    </div>
+    <div class="planetOne">
+        <h5> OGLE-2005-BLG-390L b</h5>
+        <img class="planetPicOne" src="assets/OGLE-2005-BLG-390L b.jpg">
+        <p class="planetInfoTwo">Etwa Minus 220 Grad Celsius kalt ist es auf dem kältesten bekannten Planeten.</p>
+    </div>
+    <div class="planetOne">
+        <h5 class="headLongName">DENIS-P J082303.1-491201 b</h5>
+        <img class="planetPicOne" src="assets/DENIS-P%20J082303.1-491201%20b.jpg">
+        <p class="planetInfo">Der größte bekannte Planet ist etwa 30 mal so schweer wie Jupiter.</p>
+    </div>
+    <div class="planetOne">
+        <h5>Janssen 55 Cancri e</h5>
+        <img class="planetPicOne" src="assets/PSR B1620-26 b3.jpg">
+        <p class="planetInfoTwo">Dieser Planet besteht zum größten Teil aus Lava und Diamant.</p>
+    </div>
+</div>
+
+    <div class="headNebula">
+        <h4>Kosmischer Nebel</h4>
+    </div>
+
+    <div class="cosmicNebula">
+        <h8 class="howToNebula">Wie ensteht Kosmischer Nebel?</h8>
+        <p class="nebulaDescr">Der Nebel besteht aus Gas und Staub, welcher das Licht von hinten aufnimmt und so sichtbar wird.</p>
+        <img class="nebulaPic" src="assets/nebula.jpg">
+        <p class="whatNebula">Was ist Kosmischer Nebel?</p>
+        <p class="nebulaDescr2">Als Nebel oder Nebelflecke wurden in <br> der Astronomie ursprünglich alle <br> leuchtenden flächenhaften Objekte an der <br> Himmelskugel bezeichnet. Dazu gehörten <br>auch Sternnebel, also Galaxien und <br> Sternhaufen, da sie bei geringer <br> Auflösung im Teleskop oder mit bloßem <br> Auge als Nebelflecke erscheinen.</p>
+        <img class="nebulaPic2" src="assets/nebula2.jpg">
+        <p class="nebulaDescr3">Heute wird die Bezeichnung kosmischer <br> Nebel jedoch fast ausschließlich für <br> interstellare Wolken aus Staub und Gas <br> verwendet, die je nach Art ihres <br> Leuchtens in verschiedene Kategorien <br> eingeteilt werden: Gasnebel, die Licht <br> emittieren oder reflektieren, und <br> Dunkelnebel, die Licht absorbieren.</p>
+    </div>
+
+<div class="spaceTech">
+    <div class="headNebula">
+        <h4>Space Technology</h4>
+    </div>
+    <img class="satPic" src="assets/satellitebanner.jpg">
+        <div class="techOne">
+            <img class="techPic" src="assets/RAEA.jpg">
+            <button onclick="showMore()" class="showMore"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            <div class="moreTech" id="420">
+                <div>
+                <h6 class="firstTel">RAE-A</h6>
+                <button class="closeButton" onclick="showLess()">X</button>
+                <p class="moreParag">Die Radio Astronomy Explorer (RAE) waren zwei Raumflugkörper des Explorer-Programms, die Radioquellen im Weltraum erforschten: besonders die Sonne, die Planeten und die Galaxie. Der erste Radio Astronomy Explorer war ein Satellit und der zweite war eine Raumsonde, die den Mond umkreiste und über seiner Rückseite, ungestört von irdischen Radioemissionen, messen konnte.</p>
+                <p class="moreParag">RAE-A (Explorer 38) war ein Satellit, der Radiostrahlung im Frequenzbereich von 0,2 bis 20 MHz untersuchte. RAE-A wog 193 kg und war gravitationsstabilisiert. Er besaß zwei 229 m lange V-Antennen, von denen die eine zur Erde und die andere senkrecht in den Weltraum ragten. Eine weitere 36,6 m lange Dipolantenne war tangential zur Erdoberfläche ausgerichtet. Der Flugkörper wurde am 4. Juli 1968 um 17:31 Uhr UTC mit einer Delta-J-Rakete in eine fast kreisförmige rückläufige Erdumlaufbahn mit 120,6° Bahnneigung zwischen 5851 km und 5861 km Höhe gestartet.[1] RAE-A hatte vier Instrumente an Bord und verbrauchte 25 W.</p>
+                </div>
+            </div>
+            <div class="techTwo">
+            <img class="goes16" src="assets/goes16_aspot.jpg">
+                <div id="421" class="moreTech2">
+                <h6 class="firstTel">GOES-16</h6>
+                    <p class="moreParagTwo">GOES-16 (ehemals GOES-R)[2] ist ein US-amerikanischer Wettersatellit aus der GOES-Serie. Der Start erfolgte am 19. November 2016 mit einer Atlas V.[3] Nach einem Jahr Testbetrieb ging GOES-16 am 18. Dezember 2017 in den Wirkbetrieb.[4]
+                        Der Satellit verwendet den Satellitenbus A2100 und ist für eine Lebensdauer von zehn Jahren ausgelegt. Er kann den aus seinem geostationären Orbit sichtbaren Teil der Erde alle 15 Minuten und das Kerngebiet der USA sogar alle fünf Minuten fotografieren. </p>
+                    <img class="goes16Two" src="assets/goes2.jpg">
+                </div>
+            </div>
+            <div class="techThree">
+                <img class="osam1" src="assets/osam1.jpg">
+                <div id="422" class="moreTech3">
+                <h6 class="firstTel">Robotic OSAM-1</h6>
+                    <p class="moreParagThree">10 bis 15 Jahre, so lange kann die Lebensdauer eines Satelliten sein. Meistens geht ihnen danach der Sprit aus und sie müssen in einen sicheren Orbit befördert werden, einen Weltraumfriedhof. Die Technik ist dabei oftmals noch intakt.</p>
+                <img class="osam2" src="assets/OSAM-1_2.jpeg">
+                    <p class="moreParagThree">Die amerikanische Raumfahrtbehörde Nasa will dies ändern und plant deswegen eine mobile robotische Tankstelle im Weltraum. Mit der Mission Osam-1 (On-orbit Servicing, Assembly, and Manufacturing 1; engl. Wartung, Montage und Fertigung in der Umlaufbahn) soll die Betankung eines bestehenden Satelliten im Weltraum getestet </p>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
